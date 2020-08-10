@@ -42,7 +42,10 @@ img[class] {
   }
 }
 @media screen and (max-width: 425px) {
-  .background {
+  img[class] {
     width: 100%;
   }
+  /* .background {
+    width: 100%;
+  } */
 }

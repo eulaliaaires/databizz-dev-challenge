@@ -3,6 +3,7 @@
   flex-direction: column;
   /* width: 55%; */
   width: fit-content;
+  padding: 0 60px;
 }
 .title {
   color: #84087e;
