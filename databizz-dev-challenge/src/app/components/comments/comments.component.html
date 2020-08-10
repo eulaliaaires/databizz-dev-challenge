@@ -1,0 +1,29 @@
+<section class="container">
+  <h2 class="title">Comentários</h2>
+  <form class="form-container">
+    <label
+      >Nome
+      <input
+        [(ngModel)]="commentAuthor"
+        name="commentAuthor"
+        type="text"
+        class="form-field"
+      />
+    </label>
+    <label>
+      Mensagem
+      <textarea
+        [(ngModel)]="commentMessage"
+        name="commentMessage"
+        type="text"
+        class="form-field textarea"
+      ></textarea>
+    </label>
+    <button
+      [disabled]="!commentAuthor || !commentMessage"
+      (click)="CreateRecord()"
+    >
+      Adicionar
+    </button>
+  </form>
+</section>
