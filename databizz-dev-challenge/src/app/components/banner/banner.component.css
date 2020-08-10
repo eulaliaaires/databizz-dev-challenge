@@ -1,0 +1,48 @@
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* width: 250px;
+    height: 450px; */
+  /* background-color: #84087e; */
+  overflow: hidden;
+  position: relative;
+  margin-right: 12rem;
+}
+/* 
+  .logo {
+    margin-bottom: 25px;
+    height: 195px;
+    position: absolute;
+  } */
+img {
+  /* margin-bottom: 25px; */
+  height: 195px;
+  position: absolute;
+  bottom: 4%;
+}
+img[class] {
+  position: relative;
+  background-color: #84087e;
+  width: 250px;
+  height: 450px;
+  /* height: 100%; */
+}
+.lines {
+  object-fit: cover;
+}
+@media screen and (max-width: 1024px) {
+  .background {
+    margin-right: 4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .background {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .background {
+    width: 100%;
+  }
+}
