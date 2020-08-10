@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Rubik", sans-serif;
+  color: #515151;
+}
+.title {
+  color: #84087e;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.author {
+  font-weight: 500;
+  text-transform: capitalize;
+}
