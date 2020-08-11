@@ -3,37 +3,18 @@
   justify-content: center;
   align-items: flex-end;
   background-image: url("../../../assets/img/background_grafismos_roxo.svg");
-  /* width: 250px;
-  height: 450px; */
   background-color: #84087e;
   background-size: cover;
-  /* overflow: hidden; */
-  /* position: relative; */
   margin-right: 12rem;
   width: 20vw;
   height: 32.5rem;
 }
-/* 
-  .logo {
-    margin-bottom: 25px;
-    height: 195px;
-    position: absolute;
-  } */
+
 .logo {
   margin-bottom: 2.5rem;
   height: 210px;
-  /* position: absolute; */
 }
-/* img[class] {
-  position: relative;
-  background-color: #84087e;
-  width: 21vw;
-  height: 32.5rem; */
-/* height: 100%; */
-/* } */
-/* .lines {
-  object-fit: cover;
-} */
+
 @media screen and (max-width: 1024px) {
   .background {
     margin-right: 4rem;
@@ -58,7 +39,4 @@
   .logo {
     margin: 0;
   }
-  /* .background {
-    width: 100%;
-  } */
 }
