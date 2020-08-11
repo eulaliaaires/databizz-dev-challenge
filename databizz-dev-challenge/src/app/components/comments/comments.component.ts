@@ -30,4 +30,7 @@ export class CommentsComponent implements OnInit {
         console.log(error);
       });
   }
+  onSubmit() {
+    this.CreateRecord();
+  }
 }
