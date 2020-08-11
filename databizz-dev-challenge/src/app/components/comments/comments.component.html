@@ -1,27 +1,52 @@
 <section class="container">
   <h2 class="title">Comentários</h2>
-  <form class="form-container">
-    <label
-      >Nome
+  <form class="form-container" #commentsForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="wrap">
+      <label for="author">Nome </label>
       <input
+        id="author"
         [(ngModel)]="commentAuthor"
         name="commentAuthor"
         type="text"
         class="form-field"
+        required
+        #author="ngModel"
       />
-    </label>
-    <label>
-      Mensagem
+      <span
+        [hidden]="
+          author.valid ||
+          author.pristine ||
+          (author.touched && submitButton.disabled)
+        "
+        class="error-message"
+        >* Este campo é obrigatório</span
+      >
+    </div>
+    <div class="wrap">
+      <label for="message">Mensagem </label>
       <textarea
+        id="message"
         [(ngModel)]="commentMessage"
         name="commentMessage"
         type="text"
         class="form-field textarea"
+        required
+        #message="ngModel"
       ></textarea>
-    </label>
+      <span
+        [hidden]="
+          message.valid ||
+          message.pristine ||
+          (message.touched && submitButton.disabled)
+        "
+        class="error-message"
+        >* Este campo é obrigatório</span
+      >
+    </div>
     <button
+      #submitButton
       [disabled]="!commentAuthor || !commentMessage"
-      (click)="CreateRecord()"
+      type="submit"
     >
       Adicionar
     </button>

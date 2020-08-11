@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   margin: 0;
-  padding: 0 60px;
+
+  /* padding: 0 60px; */
+}
+::selection {
+  background: #fdc32b; /* WebKit/Blink Browsers */
 }
